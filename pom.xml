@@ -3,4 +3,11 @@
   <groupId>com.api.test.java.lib</groupId>
   <artifactId>api-test-java-lib</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+	<dependencies>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20210307</version>
+		</dependency>
+	</dependencies>
 </project>
