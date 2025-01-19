@@ -6,7 +6,10 @@ public class CreateInnerJsonObject {
 
 	public static void main(String[] args) {
 		
-		JSONObject parent = new JSONObject();  
+		JSONObject parent = new JSONObject();
+		parent.put("name", "Joey");
+		parent.put("age", 30);
+		parent.put("isActive", true);
 
 	}
 
