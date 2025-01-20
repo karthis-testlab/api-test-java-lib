@@ -10,6 +10,8 @@ public class CreateInnerJsonObject {
 		parent.put("name", "Joey");
 		parent.put("age", 30);
 		parent.put("isActive", true);
+		
+		JSONObject child = new JSONObject();
 
 	}
 
