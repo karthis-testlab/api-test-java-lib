@@ -18,6 +18,8 @@ public class CreateInnerJsonObject {
 		child.put("zipcode", "1001");
 		
 		parent.put("address", child);
+		
+		System.out.println(parent.toString(4));
 
 	}
 
