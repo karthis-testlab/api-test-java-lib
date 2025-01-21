@@ -12,6 +12,12 @@ public class CreateInnerJsonObject {
 		parent.put("isActive", true);
 		
 		JSONObject child = new JSONObject();
+		child.put("street", "123 Elm st");
+		child.put("city", "Metropolis");
+		child.put("state", "NY");
+		child.put("zipcode", "1001");
+		
+		parent.put("address", child);
 
 	}
 
