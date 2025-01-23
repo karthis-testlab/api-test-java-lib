@@ -6,11 +6,13 @@ public class CreateInnerJsonObject {
 
 	public static void main(String[] args) {
 		
+		// Main JSON Object
 		JSONObject parent = new JSONObject();
 		parent.put("name", "Joey");
 		parent.put("age", 30);
 		parent.put("isActive", true);
 		
+		// Nested JSON Object for the address
 		JSONObject child = new JSONObject();
 		child.put("street", "123 Elm st");
 		child.put("city", "Metropolis");
@@ -19,6 +21,8 @@ public class CreateInnerJsonObject {
 		
 		parent.put("address", child);
 		
+		// Print the JSON Object
+	   //  Using toString(4) for pretty printing with indentation
 		System.out.println(parent.toString(4));
 
 	}
