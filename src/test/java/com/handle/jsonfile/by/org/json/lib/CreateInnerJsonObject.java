@@ -7,23 +7,24 @@ public class CreateInnerJsonObject {
 	public static void main(String[] args) {
 		
 		// Main JSON Object
-		JSONObject parent = new JSONObject();
-		parent.put("name", "Joey");
-		parent.put("age", 30);
-		parent.put("isActive", true);
+		JSONObject personJson = new JSONObject();
 		
 		// Nested JSON Object for the address
-		JSONObject child = new JSONObject();
-		child.put("street", "123 Elm st");
-		child.put("city", "Metropolis");
-		child.put("state", "NY");
-		child.put("zipcode", "1001");
+		JSONObject addressJson = new JSONObject();
+		addressJson.put("street", "123 Elm st");
+		addressJson.put("city", "Metropolis");
+		addressJson.put("state", "NY");
+		addressJson.put("zipcode", "1001");
 		
-		parent.put("address", child);
+		// Adding nested JSON object to the main JSON object
+		personJson.put("name", "Joey");
+		personJson.put("age", 30);
+		personJson.put("isActive", true);		
+		personJson.put("address", addressJson);
 		
 		// Print the JSON Object
-	   //  Using toString(4) for pretty printing with indentation
-		System.out.println(parent.toString(4));
+		// Using toString(4) for pretty printing with indentation
+		System.out.println(personJson.toString(4));
 
 	}
 
