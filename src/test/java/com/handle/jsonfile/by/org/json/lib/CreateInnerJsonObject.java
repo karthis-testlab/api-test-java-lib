@@ -24,7 +24,7 @@ public class CreateInnerJsonObject {
 		
 		// Print the JSON Object
 		// Using toString(4) for pretty printing with indentation
-		System.out.println(personJson.toString(4));
+		System.out.println(personJson.toString(5));
 
 	}
 
